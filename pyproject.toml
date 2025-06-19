@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openstack-mcp-server"
+version = "0.1.1"
+description = "获取OpenStack集群环境资源信息，包括计算、存储、网络、镜像等资源"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: System Administrators",
+    "Topic :: System :: Systems Administration",
+]
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp>=1.9.4",
+    "click>=8.1.0",
+    "anyio>=3.7.0",
+    "starlette>=0.28.0",
+    "uvicorn>=0.23.0",
+    "openstacksdk>=1.4.0",
+]
+
+[project.scripts]
+openstack-mcp-server = "mcp_openstack_http.server:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
