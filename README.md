@@ -2,7 +2,7 @@
 
 ## 总览
 
-基于MCP（Multimodal Capability Protocol）的OpenStack资源查询服务，提供API接口查询OpenStack云平台的计算、存储、网络、镜像等资源信息。
+基于MCP(Model Context Protocol)的OpenStack资源查询服务，提供API接口查询OpenStack云平台的计算、存储、网络、镜像等资源信息。
 
 ## 功能特性
 
@@ -25,7 +25,7 @@
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │             │    │             │    │             │
 │  AI客户端    │───▶│  MCP Server │───▶│  OpenStack  │
-│  (LLM大模型) │◀───│  (本服务)    │◀───│  API        │
+│  (LLM大模型) │◀───│  (服务端)    │◀───│  API        │
 │             │    │             │    │             │
 └─────────────┘    └─────────────┘    └─────────────┘
 ```
