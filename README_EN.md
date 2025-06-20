@@ -2,7 +2,7 @@
 
 ## Overview
 
-An OpenStack resource query service based on MCP (Multimodal Capability Protocol), providing API interfaces to query compute, storage, network, image, and other resources from the OpenStack cloud platform.
+An OpenStack resource query service based on MCP (Model Context Protocol), providing API interfaces to query compute, storage, network, image, and other resources from the OpenStack cloud platform.
 
 ## Features
 
@@ -25,7 +25,7 @@ An OpenStack resource query service based on MCP (Multimodal Capability Protocol
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │             │    │             │    │             │
 │  AI Client  │───▶│  MCP Server │───▶│  OpenStack  │
-│  (LLM)      │◀───│  (Service)  │◀───│  API        │
+│  (LLM)      │◀───│  (Server)   │◀───│  API        │
 │             │    │             │    │             │
 └─────────────┘    └─────────────┘    └─────────────┘
 ```
